@@ -1,0 +1,153 @@
+.diseno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  padding-block: 32px 48px;
+}
+
+aside {
+  flex: 1 1 260px;
+  max-width: 320px;
+}
+
+main {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (max-width: 900px) {
+  aside {
+    max-width: none;
+  }
+}
+
+.pestanas {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--borde);
+  overflow-x: auto;
+}
+
+.pestanas a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  color: var(--texto-3);
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.pestanas a:hover {
+  color: var(--texto-fuerte);
+}
+
+.pestanas .activa {
+  color: var(--texto-fuerte);
+  font-weight: 600;
+  border-bottom-color: var(--acento-linea);
+}
+
+.contador {
+  font-size: 12px;
+  background: var(--borde);
+  color: var(--texto-2);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.leeme {
+  overflow: hidden;
+  scroll-margin-top: 16px;
+}
+
+.leeme-titulo {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--borde);
+  font-size: 13px;
+  color: var(--texto-4);
+}
+
+.leeme-cuerpo {
+  padding: 24px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 28px;
+  align-items: center;
+}
+
+.leeme-texto {
+  flex: 1 1 340px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leeme-texto h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--texto-fuerte);
+}
+
+.leeme-pixel {
+  flex: 0 1 300px;
+  min-width: 220px;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+
+.encabezado-bloque {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.encabezado-bloque a {
+  font-size: 14px;
+}
+
+.grilla {
+  display: grid;
+  gap: 16px;
+}
+
+.grilla--proyectos {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.grilla--webs {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+}
+
+.cta {
+  align-self: flex-start;
+}
+
+.sobre-mi {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .leeme-cuerpo,
+  .sobre-mi {
+    padding: 20px;
+  }
+}

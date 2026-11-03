@@ -1,0 +1,137 @@
+@if (p(); as p) {
+  <div class="cabecera-proyecto">
+    <div class="contenedor cabecera-interior">
+      <div class="migas">
+        <img src="img/foto-perfil.jpg" alt="" width="28" height="28" />
+        <a routerLink="/" fragment="proyectos">Proyectos</a>
+        <span aria-hidden="true">/</span>
+        <h1 class="mono">{{ p.nombre }}</h1>
+        <span class="etiqueta">{{ p.tipo }}</span>
+        <span class="estado">{{ p.estado }}</span>
+      </div>
+      <nav class="pestanas" aria-label="Secciones del proyecto">
+        <a [routerLink]="[]" fragment="descripcion" class="activa">Descripción</a>
+        <a [routerLink]="[]" fragment="capturas">Capturas</a>
+        <a [routerLink]="[]" fragment="como-funciona">Cómo funciona</a>
+        <a [routerLink]="[]" fragment="avances">Avances</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="contenedor diseno">
+    <main>
+      <section id="descripcion" class="card leeme">
+        <div class="leeme-titulo mono">LEEME.md</div>
+        <div class="leeme-cuerpo">
+          <h2>{{ p.titulo }}</h2>
+          <p class="lectura">{{ p.intro }}</p>
+          <h3>El problema</h3>
+          <p class="lectura">{{ p.problema }}</p>
+          <h3>Qué incluye</h3>
+          <ul class="lectura">
+            @for (i of p.incluye; track i) {
+              <li>{{ i }}</li>
+            }
+          </ul>
+        </div>
+      </section>
+
+      <section id="capturas" class="bloque">
+        <h2 class="titulo-seccion">Capturas</h2>
+        <p class="bajada">Capturas reales de las apps funcionando con datos de prueba.</p>
+        <div class="capturas">
+          @for (c of p.capturas; track c.src) {
+            <figure>
+              <img
+                class="card"
+                [src]="c.src"
+                [alt]="c.alt"
+                loading="lazy"
+                width="600"
+                height="1022"
+              />
+              <figcaption>{{ c.texto }}</figcaption>
+            </figure>
+          }
+        </div>
+      </section>
+
+      <section id="como-funciona" class="card bloque relleno">
+        <h2 class="titulo-seccion">Cómo funciona por dentro</h2>
+        <div class="piezas">
+          @for (c of p.comoFunciona; track c.titulo) {
+            <div class="pieza">
+              <p class="pieza-titulo">{{ c.titulo }}</p>
+              <p class="pieza-texto">{{ c.texto }}</p>
+            </div>
+          }
+        </div>
+      </section>
+
+      <section id="avances" class="card bloque relleno">
+        <h2 class="titulo-seccion">Avances</h2>
+        <ol class="avances">
+          @for (a of p.avances; track $index) {
+            <li>
+              <span class="fecha mono" [class.proximo]="a.proximo">{{ a.fecha }}</span>
+              <span
+                >{{ a.texto }}
+                @if (a.proximo) {
+                  <span class="tenue"> · próximo</span>
+                }
+              </span>
+            </li>
+          }
+        </ol>
+      </section>
+    </main>
+
+    <aside>
+      <div class="card caja">
+        <h2>Acerca de</h2>
+        <p class="tenue2">{{ p.acerca }}</p>
+        @if (p.demo) {
+          <a class="boton boton--primario" [href]="p.demo" target="_blank" rel="noopener"
+            ><app-icono nombre="externo" [tam]="16" />Ver la demo</a
+          >
+        } @else {
+          <span class="boton boton--secundario deshabilitado" aria-disabled="true"
+            >Demo disponible en diciembre</span
+          >
+        }
+        <a
+          class="boton boton--secundario"
+          [href]="perfil.github + '/' + p.repo"
+          target="_blank"
+          rel="noopener"
+          ><app-icono nombre="codigo" [tam]="16" />Ver el código</a
+        >
+        <div class="chips">
+          @for (s of p.stack; track s) {
+            <span class="chip">{{ s }}</span>
+          }
+        </div>
+      </div>
+
+      <div class="card caja">
+        <h2>En números</h2>
+        <ul class="numeros">
+          @for (n of p.numeros; track n.etiqueta) {
+            <li>
+              <span class="tenue2">{{ n.etiqueta }}</span
+              ><strong>{{ n.valor }}</strong>
+            </li>
+          }
+        </ul>
+      </div>
+
+      @if (repo(); as r) {
+        <div class="card caja">
+          <h2>Lenguajes</h2>
+          <app-barra-lenguajes [lenguajes]="r.lenguajes" [lista]="true" />
+          <p class="nota">Según GitHub</p>
+        </div>
+      }
+    </aside>
+  </div>
+}

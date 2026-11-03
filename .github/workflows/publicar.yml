@@ -1,0 +1,60 @@
+name: Publicar portfolio
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * *' # todos los días a las 3 AM de Argentina: actualiza la actividad
+  workflow_dispatch: # botón "Run workflow" para publicarlo a mano
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Bajar actividad y repositorios de GitHub
+        run: npm run github
+        env:
+          # Con un token personal (secret ACTIVIDAD_TOKEN) también cuenta tu actividad privada.
+          GITHUB_TOKEN: ${{ secrets.ACTIVIDAD_TOKEN || github.token }}
+          GITHUB_USUARIO: ${{ github.repository_owner }}
+
+      - name: Compilar
+        run: |
+          # En un repo llamado <usuario>.github.io el sitio vive en la raíz; en otro, en /<repo>/
+          REPO="${GITHUB_REPOSITORY#*/}"
+          if [ "${REPO,,}" = "${GITHUB_REPOSITORY_OWNER,,}.github.io" ]; then BASE="/"; else BASE="/$REPO/"; fi
+          npx ng build --base-href "$BASE"
+          # GitHub Pages no conoce las rutas de Angular: 404.html carga la app igual
+          cp dist/portfolio-dexxadev/browser/index.html dist/portfolio-dexxadev/browser/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/portfolio-dexxadev/browser
+
+  publicar:
+    needs: compilar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

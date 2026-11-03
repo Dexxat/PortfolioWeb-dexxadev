@@ -1,0 +1,232 @@
+/* =========================================================
+   Tokens de diseño. Modo oscuro por defecto; modo claro con
+   [data-tema="claro"] en <html> (lo cambia TemaService).
+   ========================================================= */
+:root,
+[data-tema='oscuro'] {
+  --fondo: #0b1220;
+  --fondo-barra: #070c16;
+  --fondo-sub: #0e1626;
+  --tarjeta: #121a2b;
+  --tarjeta-suave: #1b2640;
+  --borde: #24304a;
+  --borde-fuerte: #34435f;
+  --linea: #1f2a42;
+  --texto: #e6eaf2;
+  --texto-fuerte: #f2f5fa;
+  --texto-2: #c3cbd9;
+  --texto-3: #a9b4c7;
+  --texto-4: #95a1b5;
+  --link: #8db4f0;
+  --link-hover: #b5cef7;
+  --acento: #2b66c7;
+  --acento-linea: #5b8fe0;
+  --ok-fondo: #12301f;
+  --ok-texto: #7fd69a;
+  --ok-punto: #3fb86a;
+  --aviso-fondo: #3a2a10;
+  --aviso-texto: #f2c27a;
+  --ia-fondo: #1e2a4a;
+  --ia-texto: #c9d8f5;
+  --pixel: #f7f6f2;
+  --act-0: #1a2336;
+  --act-1: #1e3a66;
+  --act-2: #2b5ca8;
+  --act-3: #4d86e0;
+  --act-4: #9cc0f5;
+  color-scheme: dark;
+}
+
+[data-tema='claro'] {
+  --fondo: #f4f6f9;
+  --fondo-barra: #0f2a52;
+  --fondo-sub: #ffffff;
+  --tarjeta: #ffffff;
+  --tarjeta-suave: #eef2f7;
+  --borde: #d9dee6;
+  --borde-fuerte: #c5cdd9;
+  --linea: #e4e9f0;
+  --texto: #18212f;
+  --texto-fuerte: #0e1726;
+  --texto-2: #3b4556;
+  --texto-3: #4a5568;
+  --texto-4: #5b6576;
+  --link: #1d4f9c;
+  --link-hover: #12366b;
+  --acento: #1f58b8;
+  --acento-linea: #12366b;
+  --ok-fondo: #e3f1e7;
+  --ok-texto: #1d5b33;
+  --ok-punto: #2e8b4e;
+  --aviso-fondo: #fff1dd;
+  --aviso-texto: #7a4a00;
+  --ia-fondo: #e3ebf8;
+  --ia-texto: #1d3a66;
+  --act-0: #e4e9f0;
+  --act-1: #b9c8de;
+  --act-2: #7c98c2;
+  --act-3: #3d6399;
+  --act-4: #12366b;
+  color-scheme: light;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--acento-linea);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Piezas reutilizables ---------- */
+.contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding-inline: 16px;
+  }
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+.card {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--texto-2);
+  background: var(--tarjeta-suave);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.etiqueta {
+  font-size: 12px;
+  border: 1px solid var(--borde-fuerte);
+  border-radius: 999px;
+  padding: 1px 8px;
+  color: var(--texto-3);
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton--primario {
+  background: var(--acento);
+  color: #ffffff;
+  border: none;
+}
+.boton--primario:hover {
+  color: #ffffff;
+  filter: brightness(1.1);
+}
+
+.boton--secundario {
+  background: var(--tarjeta);
+  color: var(--texto);
+  border: 1px solid var(--borde-fuerte);
+  font-weight: 500;
+}
+.boton--secundario:hover {
+  color: var(--texto);
+  border-color: var(--acento-linea);
+}
+
+.titulo-seccion {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.bajada {
+  font-size: 15px;
+  color: var(--texto-3);
+}
+
+.lectura {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.solo-lectores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

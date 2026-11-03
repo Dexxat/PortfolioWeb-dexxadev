@@ -1,0 +1,226 @@
+{
+ "usuario": "Dexxat",
+ "actualizado": "2026-10-31",
+ "repos": [
+  {
+   "nombre": "QA-Automation--Playwright",
+   "descripcion": null,
+   "web": null,
+   "actualizado": "2026-10-31",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 100.0
+    }
+   ]
+  },
+  {
+   "nombre": "TermLearn",
+   "descripcion": "Plataforma intuitiva y minimalista para aprender los comandos esenciales de Terminal",
+   "web": null,
+   "actualizado": "2026-10-30",
+   "lenguajes": [
+    {
+     "nombre": "HTML",
+     "porcentaje": 99.0
+    },
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 1.0
+    }
+   ]
+  },
+  {
+   "nombre": "FreeDeli-app",
+   "descripcion": "Plataforma para mediar envios en una zona especifica, entre rider y kioskos 24hs",
+   "web": null,
+   "actualizado": "2026-10-30",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 72.1
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 21.0
+    },
+    {
+     "nombre": "SCSS",
+     "porcentaje": 6.1
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 0.6
+    },
+    {
+     "nombre": "Dockerfile",
+     "porcentaje": 0.2
+    }
+   ]
+  },
+  {
+   "nombre": "FUINYTER-WEB",
+   "descripcion": null,
+   "web": "https://dexxat.github.io/FUINYTER-WEB/",
+   "actualizado": "2026-10-28",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 41.9
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 33.2
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 23.0
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 1.8
+    }
+   ]
+  },
+  {
+   "nombre": "Mapaladar",
+   "descripcion": null,
+   "web": null,
+   "actualizado": "2026-10-24",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 76.5
+    },
+    {
+     "nombre": "SCSS",
+     "porcentaje": 13.9
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 9.6
+    }
+   ]
+  },
+  {
+   "nombre": "Proyecto-Web-Pizzeria-Pitsa",
+   "descripcion": "Proyecto \"Pitsa\" web. Hosting in GitHub Pages.",
+   "web": "https://www.somospitsa.com",
+   "actualizado": "2026-10-23",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 34.9
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 29.6
+    },
+    {
+     "nombre": "Java",
+     "porcentaje": 20.2
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 7.7
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 7.6
+    }
+   ]
+  },
+  {
+   "nombre": "Proyecto-Web-Guri-Cafe",
+   "descripcion": "Proyecto web para Cafeteria Guri",
+   "web": "https://dexxat.github.io/Proyecto-Web-Guri-Cafe/",
+   "actualizado": "2026-09-24",
+   "lenguajes": [
+    {
+     "nombre": "HTML",
+     "porcentaje": 46.3
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 40.0
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 13.7
+    }
+   ]
+  },
+  {
+   "nombre": "Proyecto-Web-Pizzeria-Valerio",
+   "descripcion": "Pagina web para pizzeria Valerio con menu interactivo que genera pedido y lo reenvia por whatsapp al local, sin necesidad de API.",
+   "web": "https://dexxat.github.io/Proyecto-Web-Pizzeria-Valerio/",
+   "actualizado": "2026-09-02",
+   "lenguajes": [
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 28.6
+    },
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 28.2
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 26.7
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 16.5
+    }
+   ]
+  },
+  {
+   "nombre": "Proyecto-Web-Personal-Trainer-LegDay",
+   "descripcion": "Landing Page para personal trainer \"LegDay\" - Hosting GitHub Pages",
+   "web": "https://dexxat.github.io/Proyecto-Web-Personal-Trainer-LegDay/",
+   "actualizado": "2026-08-29",
+   "lenguajes": [
+    {
+     "nombre": "HTML",
+     "porcentaje": 96.3
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 2.6
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 0.6
+    },
+    {
+     "nombre": "Python",
+     "porcentaje": 0.3
+    },
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 0.2
+    }
+   ]
+  },
+  {
+   "nombre": "Proyecto-Web-Gordough-Pizza",
+   "descripcion": "Landing page for Gordough Pizza",
+   "web": "https://dexxat.github.io/Proyecto-Web-Gordough-Pizza/",
+   "actualizado": "2026-08-21",
+   "lenguajes": [
+    {
+     "nombre": "HTML",
+     "porcentaje": 89.6
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 6.8
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 3.6
+    }
+   ]
+  }
+ ]
+}

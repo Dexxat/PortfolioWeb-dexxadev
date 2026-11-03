@@ -1,0 +1,285 @@
+.cabecera-proyecto {
+  background: var(--fondo-sub);
+  border-bottom: 1px solid var(--borde);
+}
+
+.cabecera-interior {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.migas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.migas img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.migas a {
+  text-decoration: none;
+}
+
+.migas h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--texto-fuerte);
+}
+
+.estado {
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 2px 10px;
+  background: var(--aviso-fondo);
+  color: var(--aviso-texto);
+}
+
+.pestanas {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+}
+
+.pestanas a {
+  padding: 12px 14px;
+  color: var(--texto-3);
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.pestanas .activa {
+  color: var(--texto-fuerte);
+  font-weight: 600;
+  border-bottom-color: var(--acento-linea);
+}
+
+.diseno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+  padding-block: 28px 48px;
+}
+
+main {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+aside {
+  flex: 1 1 260px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  aside {
+    max-width: none;
+  }
+}
+
+section {
+  scroll-margin-top: 16px;
+}
+
+.leeme {
+  overflow: hidden;
+}
+
+.leeme-titulo {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--borde);
+  font-size: 13px;
+  color: var(--texto-4);
+}
+
+.leeme-cuerpo {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.leeme-cuerpo h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--texto-fuerte);
+}
+
+.leeme-cuerpo h3 {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.leeme-cuerpo ul {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.7;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.relleno {
+  padding: 24px 28px;
+}
+
+.capturas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr));
+  gap: 16px;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+figcaption {
+  font-size: 14px;
+  color: var(--texto-3);
+}
+
+.piezas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 12px;
+}
+
+.pieza {
+  border: 1px solid var(--borde);
+  background: var(--fondo-sub);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.pieza-titulo {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.pieza-texto {
+  font-size: 14px;
+  color: var(--texto-3);
+  line-height: 1.5;
+}
+
+.avances {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avances li {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.avances li + li {
+  border-top: 1px solid var(--linea);
+}
+
+.fecha {
+  flex: 0 0 96px;
+  font-size: 13px;
+  color: var(--texto-3);
+}
+
+.fecha.proximo {
+  color: var(--aviso-texto);
+}
+
+.tenue {
+  color: var(--texto-3);
+}
+
+.tenue2 {
+  color: var(--texto-3);
+}
+
+.caja {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.caja h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.caja > p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.deshabilitado {
+  cursor: default;
+  color: var(--texto-3);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.numeros {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.numeros li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nota {
+  font-size: 12px;
+  color: var(--texto-4);
+}
+
+@media (max-width: 600px) {
+  .leeme-cuerpo,
+  .relleno {
+    padding: 20px;
+  }
+}
