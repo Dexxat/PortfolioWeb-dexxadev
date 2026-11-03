@@ -6,13 +6,17 @@
   <main>
     <nav class="pestanas" aria-label="Secciones de la página">
       <a routerLink="/" fragment="inicio" class="activa">Inicio</a>
-      <a routerLink="/" fragment="todos"
-        >Proyectos <span class="contador">{{ cantidadRepos() }}</span></a
+      <a routerLink="/" fragment="sobre-mi">Sobre mí</a>
+      <a routerLink="/" fragment="actividad">Actividad</a>
+      <a routerLink="/" fragment="todos" (click)="reposAbiertos.set(true)"
+        >Repositorios <span class="contador">{{ cantidadRepos() }}</span></a
+      >
+      <a routerLink="/" fragment="proyectos"
+        >Proyectos <span class="contador">{{ destacados.length }}</span></a
       >
       <a routerLink="/" fragment="comercios"
         >Webs para comercios <span class="contador">{{ webs.length }}</span></a
       >
-      <a routerLink="/" fragment="sobre-mi">Sobre mí</a>
     </nav>
 
     <section id="inicio" class="card leeme" aria-labelledby="t-saludo">
@@ -33,26 +37,43 @@
       </div>
     </section>
 
+    <section id="sobre-mi" class="card sobre-mi" aria-labelledby="t-sobre">
+      <h2 id="t-sobre" class="titulo-seccion">Sobre mí</h2>
+      @for (parrafo of perfil.sobreMi; track $index) {
+        <p class="lectura">{{ parrafo }}</p>
+      }
+    </section>
+
+    <section id="actividad" class="card actividad" aria-label="Actividad en GitHub">
+      <app-actividad />
+    </section>
+
+    <section id="todos" class="bloque" aria-labelledby="t-todos">
+      <details [open]="reposAbiertos()" (toggle)="alCambiarRepos($event)">
+        <summary class="card repos-boton">
+          <h2 id="t-todos" class="titulo-seccion">
+            Todos los repositorios <span class="contador">{{ cantidadRepos() }}</span>
+          </h2>
+          <app-icono class="repos-flecha" nombre="flecha" />
+        </summary>
+        <div class="repos-cuerpo">
+          <p class="bajada">
+            Los repositorios públicos, con los lenguajes que usa cada uno según GitHub.
+          </p>
+          <app-lista-repos />
+        </div>
+      </details>
+    </section>
+
     <section id="proyectos" class="bloque" aria-labelledby="t-destacados">
-      <div class="encabezado-bloque">
+      <div>
         <h2 id="t-destacados" class="titulo-seccion">Proyectos destacados</h2>
-        <a routerLink="/" fragment="todos">Ver los {{ cantidadRepos() }} repositorios</a>
       </div>
       <div class="grilla grilla--proyectos">
         @for (p of destacados; track p.nombre) {
           <app-tarjeta-proyecto [p]="p" />
         }
       </div>
-    </section>
-
-    <section id="todos" class="bloque" aria-labelledby="t-todos">
-      <div>
-        <h2 id="t-todos" class="titulo-seccion">Todos los repositorios</h2>
-        <p class="bajada">
-          Los repositorios públicos, con los lenguajes que usa cada uno según GitHub.
-        </p>
-      </div>
-      <app-lista-repos />
     </section>
 
     <section id="comercios" class="bloque" aria-labelledby="t-comercios">
@@ -70,17 +91,6 @@
       <a class="boton boton--primario cta" [href]="whatsappLocal" target="_blank" rel="noopener"
         >Quiero una web para mi local</a
       >
-    </section>
-
-    <section class="card" aria-label="Actividad en GitHub">
-      <app-actividad />
-    </section>
-
-    <section id="sobre-mi" class="card sobre-mi" aria-labelledby="t-sobre">
-      <h2 id="t-sobre" class="titulo-seccion">Sobre mí</h2>
-      @for (parrafo of perfil.sobreMi; track $index) {
-        <p class="lectura">{{ parrafo }}</p>
-      }
     </section>
   </main>
 </div>

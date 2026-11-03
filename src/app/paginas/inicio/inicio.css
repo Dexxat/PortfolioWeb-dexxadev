@@ -108,18 +108,6 @@ main {
   scroll-margin-top: 16px;
 }
 
-.encabezado-bloque {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.encabezado-bloque a {
-  font-size: 14px;
-}
-
 .grilla {
   display: grid;
   gap: 16px;
@@ -135,6 +123,43 @@ main {
 
 .cta {
   align-self: flex-start;
+}
+
+.actividad {
+  scroll-margin-top: 16px;
+}
+
+.repos-boton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.repos-boton::-webkit-details-marker {
+  display: none;
+}
+
+.repos-boton:hover {
+  border-color: var(--borde-fuerte);
+}
+
+.repos-flecha {
+  color: var(--texto-3);
+}
+
+details[open] .repos-flecha {
+  transform: rotate(180deg);
+}
+
+.repos-cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .sobre-mi {

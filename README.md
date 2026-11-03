@@ -6,7 +6,7 @@ Hecho con **Angular 22** (componentes standalone, signals, `httpResource`, contr
 
 ## Qué tiene
 
-- **Inicio:** perfil, LEEME con la imagen 8 bits que se convierte en video al pasar el cursor, proyectos destacados, todos los repositorios con sus lenguajes, webs para comercios, calendario de actividad y "Sobre mí".
+- **Inicio:** perfil, LEEME con la imagen 8 bits que se convierte en video al pasar el cursor, "Sobre mí", calendario de actividad, todos los repositorios con sus lenguajes (en un box desplegable), proyectos destacados y webs para comercios.
 - **Página de proyecto** (`/proyectos/freedeli`): descripción, capturas, cómo funciona, avances, stack y lenguajes.
 - **Datos reales de GitHub:** la actividad y los repositorios se descargan con `scripts/actualizar-github.mjs` y se actualizan solos todos los días al publicar.
 - **Modo claro y oscuro**, recordado en el navegador.

@@ -15,9 +15,9 @@ import { Icono } from '../componentes/icono';
           <span class="mono">DexxaDev</span>
         </a>
         <nav aria-label="Secciones">
+          <a routerLink="/" fragment="sobre-mi">Sobre mí</a>
           <a routerLink="/" fragment="proyectos">Proyectos</a>
           <a routerLink="/" fragment="comercios">Webs para comercios</a>
-          <a routerLink="/" fragment="sobre-mi">Sobre mí</a>
         </nav>
         <button
           type="button"

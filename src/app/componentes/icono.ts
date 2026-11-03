@@ -15,6 +15,7 @@ const TRAZOS: Record<string, string> = {
   sonido: 'M11 5L6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14',
   silencio: 'M11 5L6 9H2v6h4l5 4zM22 9l-6 6M16 9l6 6',
   menu: 'M4 6h16M4 12h16M4 18h16',
+  flecha: 'M6 9l6 6 6-6',
 };
 
 @Component({
