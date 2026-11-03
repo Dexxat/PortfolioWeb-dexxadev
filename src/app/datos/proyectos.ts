@@ -132,7 +132,11 @@ export const DESCRIPCIONES_REPOS: Record<string, string> = {
 };
 
 /** Repos que no se muestran en la lista (por ejemplo, este mismo portfolio). */
-export const REPOS_OCULTOS: string[] = ['Dexxat.github.io', 'portfolio-dexxadev'];
+export const REPOS_OCULTOS: string[] = [
+  'Dexxat.github.io',
+  'portfolio-dexxadev',
+  'PortfolioWeb-dexxadev',
+];
 
 /** Páginas de detalle. Para sumar otro proyecto, agregá un objeto con su slug. */
 export const DETALLES: DetalleProyecto[] = [

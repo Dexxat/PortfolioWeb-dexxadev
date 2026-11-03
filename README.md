@@ -59,8 +59,6 @@ El token queda guardado en GitHub y nunca llega a la página.
 | Imágenes y video | `public/img/`, `public/video/` |
 | Datos de GitHub (se regeneran solos) | `public/data/` |
 
-**Antes de publicar:** reemplazá el número de WhatsApp en `src/app/datos/perfil.ts` (`whatsapp: '549XXXXXXXXXX'`).
-
 Para sumar otra página de proyecto, agregá un objeto a `DETALLES` con su `slug` y poné `ruta: '/proyectos/<slug>'` en su tarjeta de `DESTACADOS`.
 
 ## Estructura

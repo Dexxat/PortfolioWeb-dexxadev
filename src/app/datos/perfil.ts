@@ -8,8 +8,8 @@ export const PERFIL = {
   ubicacion: 'Bella Vista, Buenos Aires',
   estudios: 'Tec. en Programación · UTN',
   github: 'https://github.com/Dexxat',
-  // Número en formato internacional, sin "+" ni espacios. Reemplazalo por el tuyo.
-  whatsapp: '549XXXXXXXXXX',
+  // Número en formato internacional, sin "+" ni espacios.
+  whatsapp: '5491159558216',
   mensajeWhatsapp: 'Hola Dexxa, vi tu portfolio y quería consultarte por una web.',
   tecnologias: [
     'Angular',
