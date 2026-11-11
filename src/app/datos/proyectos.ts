@@ -58,6 +58,15 @@ export const DESTACADOS: ProyectoDestacado[] = [
 /** Tarjetas de "Webs para comercios". */
 export const WEBS: WebComercio[] = [
   {
+    nombre: 'Tromb Producciones',
+    lugar: 'Bella Vista',
+    descripcion:
+      'Productora de shows y eventos. El formulario arma el pedido y lo manda por WhatsApp.',
+    url: 'https://dexxat.github.io/TROMB-EVENTOS-WEB/',
+    captura: 'img/webs/tromb.jpg',
+    alt: 'Captura de la web de Tromb Producciones',
+  },
+  {
     nombre: 'Pizzería Valerio',
     lugar: 'Bella Vista',
     descripcion: 'Menú interactivo que arma el pedido y lo manda por WhatsApp.',
@@ -129,6 +138,8 @@ export const DESCRIPCIONES_REPOS: Record<string, string> = {
   'Proyecto-Web-Personal-Trainer-LegDay':
     'Landing de LegDay, entrenadora personal, con planes y galería.',
   'Proyecto-Web-Gordough-Pizza': 'Landing de GorDough, pizza estilo Nueva York en La Plata.',
+  'TROMB-EVENTOS-WEB':
+    'Landing de Tromb Producciones, productora de shows y eventos en Bella Vista, con galería y pedidos por WhatsApp.',
 };
 
 /** Repos que no se muestran en la lista (por ejemplo, este mismo portfolio). */

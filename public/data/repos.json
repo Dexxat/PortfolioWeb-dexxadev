@@ -1,16 +1,84 @@
 {
  "usuario": "Dexxat",
- "actualizado": "2026-10-31",
+ "actualizado": "2026-11-11",
  "repos": [
   {
+   "nombre": "TROMB-EVENTOS-WEB",
+   "descripcion": "Proyecto web para productora de eventos \"Tromb\".",
+   "web": "https://dexxat.github.io/TROMB-EVENTOS-WEB/",
+   "actualizado": "2026-11-11",
+   "lenguajes": [
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 35.6
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 35
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 18.9
+    },
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 10.5
+    }
+   ]
+  },
+  {
+   "nombre": "Mapaladar",
+   "descripcion": "Plataforma interactiva con mapa y locales gastronómicos de Bella Vista.",
+   "web": "https://dexxat.github.io/Mapaladar/",
+   "actualizado": "2026-11-03",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 76.5
+    },
+    {
+     "nombre": "SCSS",
+     "porcentaje": 13.9
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 9.6
+    }
+   ]
+  },
+  {
+   "nombre": "PortfolioWeb-dexxadev",
+   "descripcion": "Proyecto de mi Portfolio personal como Dev",
+   "web": "https://dexxat.github.io/PortfolioWeb-dexxadev/",
+   "actualizado": "2026-11-03",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 68.5
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 13.8
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 11.9
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 5.8
+    }
+   ]
+  },
+  {
    "nombre": "QA-Automation--Playwright",
-   "descripcion": null,
-   "web": null,
+   "descripcion": "App de testing QA - E2E (la implemento en proyectos propios, y me ayudo a detectar varios bugs)",
+   "web": "https://dexxat.github.io/QA-Automation--Playwright/",
    "actualizado": "2026-10-31",
    "lenguajes": [
     {
      "nombre": "TypeScript",
-     "porcentaje": 100.0
+     "porcentaje": 100
     }
    ]
   },
@@ -22,11 +90,11 @@
    "lenguajes": [
     {
      "nombre": "HTML",
-     "porcentaje": 99.0
+     "porcentaje": 99
     },
     {
      "nombre": "TypeScript",
-     "porcentaje": 1.0
+     "porcentaje": 1
     }
    ]
   },
@@ -42,7 +110,7 @@
     },
     {
      "nombre": "HTML",
-     "porcentaje": 21.0
+     "porcentaje": 21
     },
     {
      "nombre": "SCSS",
@@ -55,6 +123,10 @@
     {
      "nombre": "Dockerfile",
      "porcentaje": 0.2
+    },
+    {
+     "nombre": "Shell",
+     "porcentaje": 0
     }
    ]
   },
@@ -74,7 +146,7 @@
     },
     {
      "nombre": "HTML",
-     "porcentaje": 23.0
+     "porcentaje": 23
     },
     {
      "nombre": "JavaScript",
@@ -83,28 +155,8 @@
    ]
   },
   {
-   "nombre": "Mapaladar",
-   "descripcion": null,
-   "web": null,
-   "actualizado": "2026-10-24",
-   "lenguajes": [
-    {
-     "nombre": "TypeScript",
-     "porcentaje": 76.5
-    },
-    {
-     "nombre": "SCSS",
-     "porcentaje": 13.9
-    },
-    {
-     "nombre": "HTML",
-     "porcentaje": 9.6
-    }
-   ]
-  },
-  {
    "nombre": "Proyecto-Web-Pizzeria-Pitsa",
-   "descripcion": "Proyecto \"Pitsa\" web. Hosting in GitHub Pages.",
+   "descripcion": "Proyecto \"Pitsa\" web. Hosting in GitHub Pages. ",
    "web": "https://www.somospitsa.com",
    "actualizado": "2026-10-23",
    "lenguajes": [
@@ -142,7 +194,7 @@
     },
     {
      "nombre": "CSS",
-     "porcentaje": 40.0
+     "porcentaje": 40
     },
     {
      "nombre": "JavaScript",
