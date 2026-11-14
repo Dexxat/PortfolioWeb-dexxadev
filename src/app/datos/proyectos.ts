@@ -12,6 +12,19 @@ export const DESTACADOS: ProyectoDestacado[] = [
     ruta: '/proyectos/freedeli',
   },
   {
+    nombre: 'LegDay App',
+    tipo: 'Full stack',
+    descripcion:
+      'Seguimiento de alumnas para una entrenadora personal: rutinas, dietas, agenda, cuotas y avisos por WhatsApp.',
+    repo: 'LegDayS-app',
+    datos: ['Next.js + Supabase', '30 pruebas'],
+    link: 'https://github.com/Dexxat/LegDayS-app',
+    banner: {
+      src: 'img/proyectos/legdays.jpg',
+      alt: 'Pantalla de ingreso de LegDay App, con el logo de LegDay',
+    },
+  },
+  {
     nombre: 'Mapaladar',
     tipo: 'App',
     descripcion:
@@ -138,6 +151,8 @@ export const DESCRIPCIONES_REPOS: Record<string, string> = {
   'Proyecto-Web-Personal-Trainer-LegDay':
     'Landing de LegDay, entrenadora personal, con planes y galería.',
   'Proyecto-Web-Gordough-Pizza': 'Landing de GorDough, pizza estilo Nueva York en La Plata.',
+  'LegDayS-app':
+    'App para la entrenadora de LegDay y sus alumnas: rutinas, dietas, agenda, cuotas, PDF y avisos por WhatsApp. Next.js con Supabase.',
   'TROMB-EVENTOS-WEB':
     'Landing de Tromb Producciones, productora de shows y eventos en Bella Vista, con galería y pedidos por WhatsApp.',
 };

@@ -1,7 +1,55 @@
 {
  "usuario": "Dexxat",
- "actualizado": "2026-11-11",
+ "actualizado": "2026-11-14",
  "repos": [
+  {
+   "nombre": "LegDayS-app",
+   "descripcion": "App para seguimiento de personalizados p/ personal trainer - Nextjs +DB Supabase + Vercel",
+   "web": "https://www.legdays.app/",
+   "actualizado": "2026-11-14",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 68.6
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 26.4
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 4.9
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 0
+    }
+   ]
+  },
+  {
+   "nombre": "PortfolioWeb-dexxadev",
+   "descripcion": "Proyecto de mi Portfolio personal como Dev - Los repositorios se actualizan al portfolio de forma automática.",
+   "web": "https://dexxat.github.io/PortfolioWeb-dexxadev/",
+   "actualizado": "2026-11-11",
+   "lenguajes": [
+    {
+     "nombre": "TypeScript",
+     "porcentaje": 68.7
+    },
+    {
+     "nombre": "CSS",
+     "porcentaje": 13.7
+    },
+    {
+     "nombre": "HTML",
+     "porcentaje": 11.9
+    },
+    {
+     "nombre": "JavaScript",
+     "porcentaje": 5.7
+    }
+   ]
+  },
   {
    "nombre": "TROMB-EVENTOS-WEB",
    "descripcion": "Proyecto web para productora de eventos \"Tromb\".",
@@ -43,30 +91,6 @@
     {
      "nombre": "HTML",
      "porcentaje": 9.6
-    }
-   ]
-  },
-  {
-   "nombre": "PortfolioWeb-dexxadev",
-   "descripcion": "Proyecto de mi Portfolio personal como Dev",
-   "web": "https://dexxat.github.io/PortfolioWeb-dexxadev/",
-   "actualizado": "2026-11-03",
-   "lenguajes": [
-    {
-     "nombre": "TypeScript",
-     "porcentaje": 68.5
-    },
-    {
-     "nombre": "CSS",
-     "porcentaje": 13.8
-    },
-    {
-     "nombre": "HTML",
-     "porcentaje": 11.9
-    },
-    {
-     "nombre": "JavaScript",
-     "porcentaje": 5.8
     }
    ]
   },
